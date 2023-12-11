@@ -187,7 +187,8 @@ class _CustomInputTextFormFieldState extends State<CustomInputTextFormField> {
                             widget.callback(output);
                           });
                         },
-                        decoration: const InputDecoration(border: InputBorder.none),
+                        decoration:
+                            const InputDecoration(border: InputBorder.none),
                         initialValue: output,
                         style: AppConstant.textbodyfocus,
                       ),
@@ -385,7 +386,7 @@ class CustomPlaceDropDownState extends State<CustomPlaceDropDown> {
                                     BoxDecoration(color: Colors.grey[200]),
                                 child: Text(
                                   e.name,
-                                  overflow: TextOverflow.ellipsis,
+                                  overflow: TextOverflow.clip,
                                 ))))
                         .toList(),
                     onChanged: (value) {
