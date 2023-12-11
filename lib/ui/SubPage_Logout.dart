@@ -11,7 +11,7 @@ class SPageDangxuat extends StatelessWidget {
       onTap: () => MainViewModel().closeMenu(),
       child: Container(
           color: AppConstant.backgroundColor,
-          child: Center(
+          child: const Center(
             child: Text("Đăng xuất"),
           )),
     );
